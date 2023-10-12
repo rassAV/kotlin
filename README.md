@@ -1,2 +1,2 @@
 # figures
-![Иллюстрация к figures](https://github.com/rassAV/_images/tree/main/kotlin/figures.png)
+![Иллюстрация к figures](https://github.com/rassAV/_images/raw/master/kotlin/figures.png)
