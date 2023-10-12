@@ -1,0 +1,22 @@
+fun main() {
+    val c1: Figure = Circle(-7f,-2f,4f)
+    println("Circle space x = ${(c1 as Circle).gettingX()}, y = ${(c1 as Circle).gettingY()}")
+    println("Circle size area = ${c1.area()}, radius = ${(c1 as Circle).getRadius()}")
+    (c1 as Circle).move(1.5f, 2.7f)
+    (c1 as Circle).resize(1.5f)
+    println("Circle space x = ${(c1 as Circle).gettingX()}, y = ${(c1 as Circle).gettingY()}")
+    println("Circle size area = ${c1.area()}, radius = ${(c1 as Circle).getRadius()}\n")
+
+    val r: Figure = Rect(4f,3f,4f,2f)
+    println("Rect space x = ${(r as Rect).gettingX()}, y = ${(r as Rect).gettingY()}")
+    println("Rect size width = ${(r as Rect).getWidth()}, height = ${(r as Rect).getHeight()}")
+    (r as Rect).rotate(RotateDirection.Clockwise, 3f, -3f)
+    println("Rect space x = ${(r as Rect).gettingX()}, y = ${(r as Rect).gettingY()}")
+    println("Rect size width = ${(r as Rect).getWidth()}, height = ${(r as Rect).getHeight()}")
+    (r as Rect).rotate(RotateDirection.CounterClockwise, 3f, -3f)
+    println("Rect space x = ${(r as Rect).gettingX()}, y = ${(r as Rect).gettingY()}")
+    println("Rect size width = ${(r as Rect).getWidth()}, height = ${(r as Rect).getHeight()}")
+    (r as Rect).rotate(RotateDirection.CounterClockwise, 3f, -3f)
+    println("Rect space x = ${(r as Rect).gettingX()}, y = ${(r as Rect).gettingY()}")
+    println("Rect size width = ${(r as Rect).getWidth()}, height = ${(r as Rect).getHeight()}")
+}
